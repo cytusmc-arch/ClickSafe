@@ -1,0 +1,488 @@
+[
+ {
+  "id": 1,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=1xbet.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "1xbet.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 2,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=888casino.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "888casino.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 3,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=bc.game"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "bc.game"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 4,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=bet365.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "bet365.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 5,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=betway.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "betway.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 6,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=chumbacasino.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "chumbacasino.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 7,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=clash.gg"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "clash.gg"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 8,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=csgoempire.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "csgoempire.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 9,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=csgoroll.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "csgoroll.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 10,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=draftkings.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "draftkings.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 11,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=duelbits.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "duelbits.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 12,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=fanduel.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "fanduel.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 13,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=gamdom.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "gamdom.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 14,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=hellcase.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "hellcase.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 15,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=key-drop.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "key-drop.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 16,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=pokerstars.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "pokerstars.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 17,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=rainbet.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "rainbet.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 18,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=razed.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "razed.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 19,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=rollbit.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "rollbit.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 20,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=roobet.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "roobet.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 21,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=shuffle.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "shuffle.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 22,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=stake.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "stake.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 23,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=stake.us"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "stake.us"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 24,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling&h=thunderpick.io"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "thunderpick.io"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 25,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gambling"
+   }
+  },
+  "condition": {
+   "regexFilter": "^https?://[^/?#]*(casino|sportsbook|gambling)[^/?#]*([/?#]|$)",
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 26,
+  "priority": 20,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "requestDomains": [
+    "1xbet.com",
+    "888casino.com",
+    "bc.game",
+    "bet365.com",
+    "betway.com",
+    "chumbacasino.com",
+    "clash.gg",
+    "csgoempire.com",
+    "csgoroll.com",
+    "draftkings.com",
+    "duelbits.com",
+    "fanduel.com",
+    "gamdom.com",
+    "hellcase.com",
+    "key-drop.com",
+    "pokerstars.com",
+    "rainbet.com",
+    "razed.com",
+    "rollbit.com",
+    "roobet.com",
+    "shuffle.com",
+    "stake.com",
+    "stake.us",
+    "thunderpick.io"
+   ],
+   "resourceTypes": [
+    "sub_frame"
+   ]
+  }
+ }
+]

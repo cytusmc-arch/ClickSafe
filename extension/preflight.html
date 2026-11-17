@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Checking link… · ClickSafe</title>
+<link rel="icon" href="icons/32.png">
+<link rel="stylesheet" href="ui.css">
+<link rel="stylesheet" href="preflight.css">
+</head>
+<body>
+<main class="card" id="card" data-state="checking">
+  <div class="brand"><img src="icons/32.png" alt="">ClickSafe</div>
+
+  <div class="badge" aria-hidden="true">
+    <svg class="ic ic-check" viewBox="0 0 24 24"><path d="M12 2.5l7.5 2.7v5.6c0 4.7-3.2 8.4-7.5 10.2-4.3-1.8-7.5-5.5-7.5-10.2V5.2z" fill="currentColor"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8" fill="none" stroke="#0b0d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="ic ic-hold" viewBox="0 0 24 24"><path d="M12 2.5l7.5 2.7v5.6c0 4.7-3.2 8.4-7.5 10.2-4.3-1.8-7.5-5.5-7.5-10.2V5.2z" fill="currentColor"/><path d="M12 7.6v5.2" stroke="#0b0d12" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="16.1" r="1.3" fill="#0b0d12"/></svg>
+    <svg class="ic ic-block" viewBox="0 0 24 24"><path d="M12 2.5l7.5 2.7v5.6c0 4.7-3.2 8.4-7.5 10.2-4.3-1.8-7.5-5.5-7.5-10.2V5.2z" fill="currentColor"/><path d="M9.4 9.4l5.2 5.2M14.6 9.4l-5.2 5.2" stroke="#0b0d12" stroke-width="2.2" stroke-linecap="round"/></svg>
+  </div>
+
+  <h1 id="title" tabindex="-1">Checking this link first</h1>
+  <div class="host mono" id="host" title=""></div>
+  <p class="url mono" id="url" hidden></p>
+  <p class="sub" id="sub" role="status" aria-live="polite">It opens in a sealed remote browser before anything loads here.</p>
+  <div class="reason" id="reason" hidden>
+    <div class="reason-cat" id="reasonCat"></div>
+    <div id="reasonText"></div>
+  </div>
+  <p class="final" id="final" hidden></p>
+
+  <ol class="steps" id="steps" aria-label="Checks">
+    <li id="s-intel"><span class="dot" aria-hidden="true"></span><span class="t">Link &amp; threat feeds</span></li>
+    <li id="s-sealed"><span class="dot" aria-hidden="true"></span><span class="t">Sealed remote browser</span></li>
+    <li id="s-shot"><span class="dot" aria-hidden="true"></span><span class="t">Screenshot check</span></li>
+    <li id="s-ai"><span class="dot" aria-hidden="true"></span><span class="t">AI verdict</span></li>
+  </ol>
+
+  <p class="lock" id="lockNote" hidden>Lockdown is on, so this can't be opened.</p>
+  <div class="actions" id="actions">
+    <button type="button" class="btn primary" id="continue" hidden>Load it hidden for a full check</button>
+    <button type="button" class="btn primary" id="open" hidden>Open it</button>
+    <button type="button" class="btn primary" id="retry" hidden>Try again</button>
+    <button type="button" class="btn ghost" id="copy" hidden>Copy link</button>
+    <button type="button" class="btn ghost" id="back" hidden>Go back</button>
+    <button type="button" class="btn ghost" id="close" hidden>Close</button>
+  </div>
+  <p class="elapsed" id="elapsed" aria-hidden="true">0 s</p>
+</main>
+<script type="module" src="preflight.js"></script>
+</body>
+</html>

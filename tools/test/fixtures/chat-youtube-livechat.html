@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>live_chat</title>
+<style>
+  body{margin:0;background:#0f0f0f;color:#f1f1f1;font:13px/1.5 Roboto,Arial,sans-serif}
+  yt-live-chat-header-renderer{display:block;padding:10px 14px;border-bottom:1px solid #272727;font-weight:500}
+  #items{display:block;padding:6px 14px;height:380px;overflow-y:auto}
+  yt-live-chat-text-message-renderer{display:block;padding:4px 0}
+  #author-name{color:#aaa;margin-right:6px}
+  #message a{color:#3ea6ff;text-decoration:none}
+</style>
+</head>
+<body>
+<yt-live-chat-renderer>
+  <yt-live-chat-header-renderer>Top chat <a href="https://support.google.com/youtube/answer/123">Learn more</a></yt-live-chat-header-renderer>
+  <yt-live-chat-item-list-renderer><div id="items"></div></yt-live-chat-item-list-renderer>
+</yt-live-chat-renderer>
+<script>
+  window.__clicks = [];
+  document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a'); if (a) { e.preventDefault(); __clicks.push(a.getAttribute('href')); } });
+  const items = document.getElementById('items');
+  const rd = (u, text) => `<a class="yt-simple-endpoint style-scope yt-live-chat-text-message-renderer" href="https://www.youtube.com/redirect?event=live_chat&amp;redir_token=QUFF&amp;q=${encodeURIComponent(u)}" target="_blank" rel="nofollow">${text || u}</a>`;
+  function msg(id, author, html) {
+    const m = document.createElement('yt-live-chat-text-message-renderer');
+    m.id = id;
+    m.innerHTML = `<span id="author-name">${author}</span><span id="message">${html}</span>`;
+    items.appendChild(m);
+    items.scrollTop = items.scrollHeight;
+  }
+  window.msg = msg; window.rd = rd;
+  // YouTube's live chat renders messages after load (polling), not in the initial HTML.
+  setTimeout(() => {
+    msg('c1', 'viewer1', 'claim it ' + rd('https://evil.test/phish'));
+    msg('c2', 'viewer2', 'my art ' + rd('https://example.com/yt'));
+    msg('c3', 'viewer3', 'internal <a href="/channel/UC123">channel</a> <a href="https://www.youtube.com/watch?v=abc">https://www.youtube.com/watch?v=abc</a>');
+  }, 300);
+</script>
+</body>
+</html>

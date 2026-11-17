@@ -1,0 +1,1305 @@
+[
+ {
+  "id": 1,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=4tube.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "4tube.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 2,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=bangbros.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "bangbros.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 3,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=beeg.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "beeg.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 4,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=bongacams.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "bongacams.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 5,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=brazzers.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "brazzers.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 6,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=cam4.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "cam4.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 7,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=camsoda.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "camsoda.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 8,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=chaturbate.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "chaturbate.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 9,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=coomer.su"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "coomer.su"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 10,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=daftsex.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "daftsex.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 11,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=e-hentai.org"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "e-hentai.org"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 12,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=eporner.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "eporner.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 13,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=erome.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "erome.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 14,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=exhentai.org"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "exhentai.org"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 15,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=f95zone.to"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "f95zone.to"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 16,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=fansly.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "fansly.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 17,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=fapello.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "fapello.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 18,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=flirt4free.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "flirt4free.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 19,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=fuq.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "fuq.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 20,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=gelbooru.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "gelbooru.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 21,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=hanime.tv"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "hanime.tv"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 22,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=hclips.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "hclips.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 23,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=hentai2read.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "hentai2read.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 24,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=hentaihaven.xxx"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "hentaihaven.xxx"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 25,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=hitomi.la"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "hitomi.la"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 26,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=hqporner.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "hqporner.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 27,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=imagefap.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "imagefap.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 28,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=imlive.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "imlive.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 29,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=influencersgonewild.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "influencersgonewild.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 30,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=iwara.tv"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "iwara.tv"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 31,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=kemono.su"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "kemono.su"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 32,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=literotica.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "literotica.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 33,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=livejasmin.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "livejasmin.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 34,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=luscious.net"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "luscious.net"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 35,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=manyvids.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "manyvids.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 36,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=motherless.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "motherless.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 37,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=myfreecams.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "myfreecams.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 38,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=naughtyamerica.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "naughtyamerica.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 39,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=nhentai.net"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "nhentai.net"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 40,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=noodlemagazine.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "noodlemagazine.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 41,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=onlyfans.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "onlyfans.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 42,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=porn.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "porn.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 43,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=pornhub.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "pornhub.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 44,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=pornhubpremium.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "pornhubpremium.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 45,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=pornpics.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "pornpics.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 46,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=porntrex.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "porntrex.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 47,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=realitykings.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "realitykings.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 48,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=redgifs.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "redgifs.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 49,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=redtube.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "redtube.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 50,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=rule34.paheal.net"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "rule34.paheal.net"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 51,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=rule34.xxx"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "rule34.xxx"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 52,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=rule34video.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "rule34video.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 53,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=sex.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "sex.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 54,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=simpcity.su"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "simpcity.su"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 55,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=spankbang.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "spankbang.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 56,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=stripchat.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "stripchat.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 57,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=thothub.to"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "thothub.to"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 58,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=tnaflix.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "tnaflix.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 59,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=tube8.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "tube8.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 60,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=txxx.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "txxx.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 61,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=xhamster.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "xhamster.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 62,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=xhamsterlive.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "xhamsterlive.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 63,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=xnxx.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "xnxx.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 64,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=xvideos.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "xvideos.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 65,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=xvideos.red"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "xvideos.red"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 66,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=youjizz.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "youjizz.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 67,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult&h=youporn.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "youporn.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 68,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=adult"
+   }
+  },
+  "condition": {
+   "regexFilter": "^https?://[^/?#]*(porn|xxx|xvideo|xnxx|xhamster|hentai|nsfw|onlyfans|chaturbate|stripchat|camgirl|sexcam|rule34|nudes)[^/?#]*([/?#]|$)",
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 69,
+  "priority": 20,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "requestDomains": [
+    "4tube.com",
+    "bangbros.com",
+    "beeg.com",
+    "bongacams.com",
+    "brazzers.com",
+    "cam4.com",
+    "camsoda.com",
+    "chaturbate.com",
+    "coomer.su",
+    "daftsex.com",
+    "e-hentai.org",
+    "eporner.com",
+    "erome.com",
+    "exhentai.org",
+    "f95zone.to",
+    "fansly.com",
+    "fapello.com",
+    "flirt4free.com",
+    "fuq.com",
+    "gelbooru.com",
+    "hanime.tv",
+    "hclips.com",
+    "hentai2read.com",
+    "hentaihaven.xxx",
+    "hitomi.la",
+    "hqporner.com",
+    "imagefap.com",
+    "imlive.com",
+    "influencersgonewild.com",
+    "iwara.tv",
+    "kemono.su",
+    "literotica.com",
+    "livejasmin.com",
+    "luscious.net",
+    "manyvids.com",
+    "motherless.com",
+    "myfreecams.com",
+    "naughtyamerica.com",
+    "nhentai.net",
+    "noodlemagazine.com",
+    "onlyfans.com",
+    "porn.com",
+    "pornhub.com",
+    "pornhubpremium.com",
+    "pornpics.com",
+    "porntrex.com",
+    "realitykings.com",
+    "redgifs.com",
+    "redtube.com",
+    "rule34.paheal.net",
+    "rule34.xxx",
+    "rule34video.com",
+    "sex.com",
+    "simpcity.su",
+    "spankbang.com",
+    "stripchat.com",
+    "thothub.to",
+    "tnaflix.com",
+    "tube8.com",
+    "txxx.com",
+    "xhamster.com",
+    "xhamsterlive.com",
+    "xnxx.com",
+    "xvideos.com",
+    "xvideos.red",
+    "youjizz.com",
+    "youporn.com"
+   ],
+   "resourceTypes": [
+    "sub_frame"
+   ]
+  }
+ }
+]

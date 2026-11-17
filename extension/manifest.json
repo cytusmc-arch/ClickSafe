@@ -1,0 +1,88 @@
+{
+  "manifest_version": 3,
+  "name": "ClickSafe — Stream Link Shield",
+  "short_name": "ClickSafe",
+  "version": "1.1.0",
+  "description": "Checks every link before your stream sees it: sealed preview, plays videos, fast-forwards timers, reads every script and image. Blocks NSFW, malware, IP grabbers and fake captchas.",
+  "minimum_chrome_version": "116",
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ClickSafe",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "webNavigation",
+    "scripting",
+    "declarativeNetRequest",
+    "downloads",
+    "notifications",
+    "contextMenus",
+    "alarms",
+    "offscreen",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "adult",
+        "enabled": true,
+        "path": "rules/adult.json"
+      },
+      {
+        "id": "gore",
+        "enabled": true,
+        "path": "rules/gore.json"
+      },
+      {
+        "id": "gambling",
+        "enabled": true,
+        "path": "rules/gambling.json"
+      },
+      {
+        "id": "iplogger",
+        "enabled": true,
+        "path": "rules/iplogger.json"
+      }
+    ]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "blocked.html",
+        "preflight.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+  },
+  "commands": {
+    "panic": {
+      "suggested_key": {
+        "default": "Alt+Shift+X"
+      },
+      "description": "Panic: cover and mute the current page"
+    }
+  }
+}

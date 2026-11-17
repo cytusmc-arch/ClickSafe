@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Live stream - YouTube (ClickSafe chat fixture)</title>
+<style>
+  body{margin:0;background:#0f0f0f;color:#f1f1f1;font:14px/1.5 Roboto,Arial,sans-serif}
+  ytd-masthead{display:flex;gap:16px;align-items:center;height:56px;padding:0 16px;background:#0f0f0f;border-bottom:1px solid #272727}
+  ytd-masthead a{color:#f1f1f1;text-decoration:none}
+  #columns{display:flex;gap:24px;padding:24px}
+  #primary{flex:1;min-width:0}
+  .player{aspect-ratio:16/9;max-height:300px;background:#000;border-radius:12px}
+  #description{background:#272727;border-radius:12px;padding:12px;margin-top:12px}
+  #description a,#content-text a{color:#3ea6ff;text-decoration:none}
+  ytd-comments{display:block;margin-top:16px}
+  #secondary{width:400px;flex:none}
+  #chatframe{width:400px;height:480px;border:1px solid #272727;border-radius:12px}
+</style>
+</head>
+<body>
+<ytd-masthead id="masthead"><a href="https://www.youtube.com/">YouTube</a><a href="https://www.youtube.com/premium">Premium</a><a href="https://example-ads.test/masthead">ad</a></ytd-masthead>
+<div id="columns">
+  <div id="primary">
+    <div class="player"></div>
+    <h1>Big charity stream</h1>
+    <div id="description"><yt-attributed-string>Merch: <a id="desc-ext" class="yt-core-attributed-string__link" href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFF&amp;q=https%3A%2F%2Fshop.example.com%2Fmerch&amp;v=abc">https://shop.example.com/merch</a><br>
+      Last stream: <a href="/watch?v=xyz">/watch?v=xyz</a> · <a href="https://youtu.be/xyz">https://youtu.be/xyz</a> · <a href="https://www.youtube.com/@otherchannel">@otherchannel</a> · <a href="https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2F">sign in</a></yt-attributed-string></div>
+    <ytd-comments><ytd-comment-thread-renderer><ytd-comment-renderer><span id="content-text">Free robux at <a id="comment-evil" href="https://www.youtube.com/redirect?event=comments&amp;q=https%3A%2F%2Fevil.test%2Frobux">https://evil.test/robux</a></span></ytd-comment-renderer></ytd-comment-thread-renderer></ytd-comments>
+  </div>
+  <div id="secondary"><iframe id="chatframe" src="/live_chat?is_popout=0&amp;v=abc"></iframe></div>
+</div>
+</body>
+</html>

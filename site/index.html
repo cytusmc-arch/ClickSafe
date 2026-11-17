@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClickSafe — click links on stream without the risk</title>
+<meta name="description" content="Free Chrome extension for streamers. ClickSafe checks every link automatically when you click it or get redirected, and keeps the page hidden until it passes TikTok, Twitch, YouTube and Instagram guidelines, so a bad link never reaches your live stream.">
+<meta property="og:title" content="ClickSafe — click links on stream without the risk">
+<meta property="og:description" content="Every new page is previewed in a sealed browser, then stays hidden and muted until it's checked. No pasting links. Free, no account, no key.">
+<meta property="og:image" content="https://clicksafe.pages.dev/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="/favicon.png">
+<link rel="preload" href="/fonts/bricolage-grotesque-0.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#"><img src="/icon.png" alt="">ClickSafe</a>
+    <div class="links"><a href="#how">How it works</a><a href="#catches">What it blocks</a><a href="#why">Why ClickSafe</a><a href="#install">Install</a><a href="#faq">FAQ</a></div>
+    <a class="btn primary dl" href="/clicksafe.zip" download="ClickSafe.zip">Download</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">For TikTok LIVE, Twitch, YouTube &amp; Instagram streamers</span>
+      <h1>Click links on stream <em>without the risk.</em></h1>
+      <p class="lede">One link from chat can end a stream. ClickSafe works on its own: click a link or get redirected, and the new page stays hidden and muted until it's been checked against TikTok, Twitch, YouTube and Instagram guidelines. If it breaks them, it stays blocked, and your viewers never see it. No pasting links into a checker.</p>
+      <div class="cta">
+        <a class="btn primary dl" href="/clicksafe.zip" download="ClickSafe.zip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+          Download for Chrome. It's free
+        </a>
+        <a class="btn ghost" href="#install">30-second install</a>
+      </div>
+      <div class="meta"><!--meta-->v1.1.0 · 3583 KB<!--/meta--> · no account · no API key</div>
+      <div class="browsers"><span class="pill">Chrome</span><span class="pill">Edge</span><span class="pill">Brave</span><span class="pill">Opera</span></div>
+    </div>
+
+    <div class="demo" id="demo" aria-label="Animated demo: a link from chat is checked by ClickSafe before it is shown" role="img">
+      <div class="chrome">
+        <div class="tabs"><div class="tab on" id="dTab"><i></i><span id="dTitle">Going LIVE · 2.4K watching</span></div><div class="tab"><i></i>Stream dashboard</div></div>
+        <div class="bar"><div class="url" id="dUrl">live.example/yourchannel</div><div class="ext"><img src="/favicon.png" alt=""></div></div>
+      </div>
+      <div class="viewport">
+        <div class="scene live on" id="sLive">
+          <div class="stage"><span class="badge-live">LIVE</span><span class="viewers">● 2,412</span><div class="face"></div></div>
+          <div class="chat">
+            <p><b class="u1">mika_</b> hiii 👋</p>
+            <p><b class="u2">dex</b> that last round was insane</p>
+            <p><b class="u3">sol.r</b> W stream</p>
+            <p id="msg"><b class="u4">n0tabot</b> omg look at this <span class="lnk" id="lnk">free-skins.gift/claim</span></p>
+          </div>
+        </div>
+        <div class="scene shield" id="sShield">
+          <div>
+            <div class="radar"><svg viewBox="0 0 24 24"><path d="M12 2.5l7.5 2.7v5.6c0 4.7-3.2 8.4-7.5 10.2-4.3-1.8-7.5-5.5-7.5-10.2V5.2z" fill="currentColor"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8" fill="none" stroke="#0b0d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4>Checking this page before it goes live</h4>
+            <span class="host" id="dHost">free-skins.gift</span>
+            <ol class="steps"><li id="d1"><span class="d"></span>Sealed preview</li><li id="d2"><span class="d"></span>Scripts &amp; media</li><li id="d3"><span class="d"></span>AI models</li></ol>
+          </div>
+        </div>
+        <div class="scene blocked" id="sBlocked">
+          <div>
+            <div class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l7.5 2.7v5.6c0 4.7-3.2 8.4-7.5 10.2-4.3-1.8-7.5-5.5-7.5-10.2V5.2z"/><path d="M9.3 9.3l5.4 5.4M14.7 9.3l-5.4 5.4" stroke-width="2.2"/></svg></div>
+            <h4>Blocked before it reached your stream</h4>
+            <p>This page looks like <b id="dCat">a scam</b>.</p>
+            <span class="mini-btn">Go back to safety</span>
+          </div>
+        </div>
+        <div class="scene" id="sSafe">
+          <div class="article">
+            <div class="kicker">Patch notes</div>
+            <h4>Season 4 map changes, explained</h4>
+            <div class="pic"></div>
+            <div class="ln w92"></div><div class="ln w84"></div><div class="ln w70"></div>
+          </div>
+          <div class="toast"><b>✓</b> Cleared · shown to stream</div>
+        </div>
+        <svg class="cursor" id="cur" viewBox="0 0 24 24"><path d="M4 2l15 9.5-6.6 1.3 3.9 7.4-2.7 1.4-3.9-7.4L4 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="story">
+  <div class="wrap">
+    <div class="beat"><span class="n">01 / The click</span><h3>Chat drops a link.</h3><p>A "giveaway", a clip, a meme. You click it live, like you've done a hundred times.</p></div>
+    <div class="beat bad"><span class="n">02 / Without ClickSafe</span><h3>It renders on stream.</h3><p>Explicit images, gore, a fake login or an IP logger, in front of every viewer. That can mean a strike, a ban, or a leaked IP.</p></div>
+    <div class="beat good"><span class="n">03 / With ClickSafe</span><h3>Your viewers see a shield.</h3><p>The link is previewed in a sealed remote browser, then the page loads hidden and muted, gets checked, and is only shown if it's clean.</p></div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">How it works</span><h2>Hidden first. Checked second. Shown last.</h2><p>Most tools warn you after a page is already on screen. ClickSafe never lets an unchecked page paint, and you don't have to do anything: it kicks in when you click a link or a site redirects you.</p></div>
+    <div class="how">
+      <article><h3>Sealed preview first</h3><p>Before an unchecked link even loads, it's opened in a sealed remote browser and screenshotted. Your PC never touches it.</p>
+        <ul><li>Follows every redirect hop to where the link really ends up</li><li>The site never sees your IP and can't run code on your PC</li><li>Screenshot and text are checked before the page loads for you</li><li>Skipped for login and token links, so your accounts stay private</li></ul></article>
+      <article><h3>Then a real check, hidden</h3><p>The page loads behind the shield, blurred and muted, and ClickSafe checks what it actually does, not just what it shows first.</p>
+        <ul><li>Presses Play on videos and samples frames across the whole video</li><li>Fast-forwards the page's timers 7 minutes (you can change this), so "normal for a minute, then the surprise" tricks show up during the check</li><li>Reads every script, including code generated at runtime and hidden code</li><li>Finds every image: hidden ones, CSS backgrounds, images only named in code, and images inside embedded frames</li><li><span>Blocklists, live threat feeds and look-alike domains like <code class="code-sm">dlscord</code></span></li></ul></article>
+      <article><h3>Reveal, or keep it blocked</h3><p>Clean pages appear within a few seconds. Pages with video take a little longer. Anything against the guidelines stays off your screen.</p>
+        <ul><li>Lockdown mode: no "show anyway" for guideline breaks</li><li>Images and videos that load later stay blurred until checked</li><li>Unsafe pages get a neutral "Blocked" screen</li><li>Your allowed sites skip the check</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section id="ai">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">The AI</span><h2>Several models. Each with one job.</h2><p>One model can be fooled or unsure, so ClickSafe uses several, each looking at a different part of the page. All of them are free, with no account and no API key.</p></div>
+    <div class="catches three">
+      <div class="catch"><b>Vision model</b><span>Looks at the screenshot, the page text and its images, and gives the main verdict against the guidelines.</span></div>
+      <div class="catch"><b>Second opinion</b><span>When the signals are mixed, a different vision model has to agree before the page is shown.</span></div>
+      <div class="catch"><b>Text safety model</b><span>A dedicated safety model double-checks the page's text.</span></div>
+      <div class="catch"><b>Speech-to-text</b><span>Transcribes the start of videos, so slurs or explicit speech are caught, not just pictures.</span></div>
+      <div class="catch"><b>Script analyst</b><span>Reviews suspicious code found on the page: drainers, IP grabbers, malware.</span></div>
+      <div class="catch"><span class="tag">on your PC</span><b>On-device image model</b><span>Screens every image and video frame on your own computer. Nothing leaves your PC.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="catches">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">What it blocks</span><h2>Anything against TikTok, Twitch, YouTube or Instagram guidelines.</h2><p>The AI checks pages against the combined community guidelines of all four platforms, and ClickSafe's own checks look for the attacks aimed at streamers. Categories marked "toggle" can be switched off in settings, for example if gambling is allowed where you stream.</p></div>
+    <div class="catches">
+      <div class="catch"><span class="tag">toggle</span><b>Sexual &amp; suggestive content</b><span>Nudity, porn, cam and OnlyFans-style sites, sexualised images</span></div>
+      <div class="catch"><span class="tag">toggle</span><b>Gore, violence &amp; shock</b><span>Real injuries or deaths, graphic violence, animal cruelty</span></div>
+      <div class="catch"><span class="tag">toggle</span><b>Gambling</b><span>Casinos, betting and case-opening sites</span></div>
+      <div class="catch"><span class="tag">toggle</span><b>IP grabbers &amp; data theft</b><span>Grabify-style links, IP-lookup scripts, and pages that send your data to Discord or Telegram webhooks</span></div>
+      <div class="catch"><b>Hate &amp; harassment</b><span>Slurs, hateful symbols, bullying, violent extremism</span></div>
+      <div class="catch"><b>Self-harm &amp; dangerous acts</b><span>Suicide, eating-disorder promotion, dangerous challenges</span></div>
+      <div class="catch"><b>Drugs &amp; weapons</b><span>Drug sales, firearms, explosives, instructions</span></div>
+      <div class="catch"><b>Scams &amp; phishing</b><span>Fake logins, "free Nitro", fake giveaways, and links listed on live phishing feeds</span></div>
+      <div class="catch"><b>Fake "verify you're human"</b><span>ClickFix pages that put a command on your clipboard and ask you to run it</span></div>
+      <div class="catch"><b>Crypto drainers &amp; miners</b><span>Wallet-draining scripts and pages that mine crypto on your PC</span></div>
+      <div class="catch"><b>Browser lockers</b><span>Fullscreen and keyboard traps, leave-page loops, tech-support scams</span></div>
+      <div class="catch"><b>Malware</b><span>Fake downloads, malicious scripts and "your PC is infected" pages</span></div>
+      <div class="catch"><b>Brand-new domains</b><span>Sites registered in the last three weeks get a caution flag</span></div>
+      <div class="catch"><b>Privacy &amp; doxxing</b><span>Exposed personal info, non-consensual imagery</span></div>
+      <div class="catch"><b>Piracy</b><span>Illegal streams of TV, films and sports</span></div>
+      <div class="catch"><b>Harmful misinformation</b><span>Dangerous medical or election claims</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="live">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">While you browse</span><h2>Protection that stays on after the page is shown.</h2><p>A page can look fine and still try something later. On every site that isn't on your allowed list, these guards stay on the whole time it's open.</p></div>
+    <div class="catches">
+      <div class="catch"><b>Clipboard guard</b><span>Sites can't slip a system command onto your clipboard</span></div>
+      <div class="catch"><b>No IP lookups or webhooks</b><span>Requests that look up your IP or send data to webhooks are blocked</span></div>
+      <div class="catch"><b>Download guard</b><span>Program downloads from unchecked sites are cancelled</span></div>
+      <div class="catch"><b>Prompts denied</b><span>Camera, microphone, location and notification requests are turned down</span></div>
+      <div class="catch"><b>No lock-in traps</b><span>Keyboard lock and fullscreen traps are blocked</span></div>
+      <div class="catch"><b>Late-loading media</b><span>New images and videos stay blurred and muted until checked</span></div>
+      <div class="catch"><b>SafeSearch forced</b><span>On Google, Bing, DuckDuckGo, Yahoo and Brave</span></div>
+      <div class="catch"><b>YouTube Restricted Mode</b><span>Moderate by default, strict or off in settings</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Built for going live</span><h2>Know before you click. Hide it if you have to.</h2></div>
+    <div class="split three">
+      <div class="card">
+        <span class="eyebrow">Chat link badges</span>
+        <h3>Links in chat get a badge.</h3>
+        <div class="chips" aria-hidden="true"><span class="chip ok">safe</span><span class="chip warn">caution</span><span class="chip bad">unsafe</span></div>
+        <p>On Twitch, Kick, YouTube, TikTok, X and Discord, links in chat are checked and badged safe, caution or unsafe before you click them.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">Panic button</span>
+        <h3>One shortcut covers it all.</h3>
+        <div class="chips"><span class="kbd">Alt+Shift+X</span></div>
+        <p>Instantly covers and mutes the page you're on. For the moment something gets past you, or you just want it off screen fast.</p>
+      </div>
+      <div class="card">
+        <span class="eyebrow">Right-click check</span>
+        <h3>Check a link without opening it.</h3>
+        <div class="chips"><span class="kbd">Check this link with ClickSafe</span></div>
+        <p>Right-click any link and ClickSafe checks it for you, without the page ever loading in your browser.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Why ClickSafe</span><h2>Not another paste-a-link checker.</h2><p>Link checkers make you copy a link, open their website, paste it and wait. That's hard to do mid-stream, and their check is a one-off visit, separate from yours. ClickSafe sits in your browser and checks the page you actually open.</p></div>
+    <table class="vs">
+      <thead><tr><th scope="col"><span class="sr">What</span></th><th scope="col">Paste-a-link checkers</th><th scope="col" class="us">ClickSafe</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Using it</th><td data-l="Paste-a-link">Copy the link, open their site, paste, wait</td><td class="us" data-l="ClickSafe">Nothing to do: it checks automatically when you click a link or get redirected</td></tr>
+        <tr><th scope="row">Redirects</th><td data-l="Paste-a-link">Checks the link you pasted, on their visit</td><td class="us" data-l="ClickSafe">Follows every redirect hop, then checks the page that loads for you</td></tr>
+        <tr><th scope="row">Once the page is open</th><td data-l="Paste-a-link">You're on your own</td><td class="us" data-l="ClickSafe">Hidden until cleared, then clipboard, download, IP-lookup and prompt guards stay on</td></tr>
+        <tr><th scope="row">Links in chat</th><td data-l="Paste-a-link">Copy each one out by hand</td><td class="us" data-l="ClickSafe">Safe, caution or unsafe badges right in chat</td></tr>
+        <tr><th scope="row">If something slips through</th><td data-l="Paste-a-link">Not their job</td><td class="us" data-l="ClickSafe">Alt+Shift+X covers and mutes the page instantly</td></tr>
+        <tr><th scope="row">Where checks run</th><td data-l="Paste-a-link">On their servers</td><td class="us" data-l="ClickSafe">A sealed remote preview, plus an on-device image model where nothing leaves your PC</td></tr>
+        <tr><th scope="row">Price</th><td data-l="Paste-a-link">Varies</td><td class="us" data-l="ClickSafe">Free. No account, no API key</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Install</span><h2>Three steps, about 30 seconds.</h2><p>Chrome only allows true one-click installs from the Chrome Web Store, so for now ClickSafe installs as an unpacked extension. The download button copies the address you need for step 2.</p></div>
+    <div class="install">
+      <div class="step" id="st1"><div class="num">1</div><h3>Download &amp; unzip</h3><p>Open <span class="kbd">ClickSafe.zip</span> from your downloads, then click <b>Extract all</b>. You'll get a <b>ClickSafe</b> folder.</p>
+        <a class="btn primary dl block" href="/clicksafe.zip" download="ClickSafe.zip">Download ClickSafe.zip</a></div>
+      <div class="step" id="st2"><div class="num">2</div><h3>Open extensions</h3><p>Paste this into a new tab, then switch on <b>Developer mode</b> in the top-right corner.</p>
+        <div class="copy"><span id="extUrl">chrome://extensions</span><button type="button" id="copyBtn">Copy</button></div></div>
+      <div class="step" id="st3"><div class="num">3</div><h3>Load it</h3><p>Click <b>Load unpacked</b> and pick the <b>ClickSafe</b> folder, or just drag the folder onto the extensions page. The welcome page opens and you're protected.</p></div>
+    </div>
+    <div class="install-cta"><p><b class="hl">Tip:</b> pin ClickSafe (puzzle icon → pin) to see what it caught and allow sites in one click. Keep the unzipped folder where it is. Chrome loads the extension from it.</p><a class="btn ghost" href="#faq">Questions?</a></div>
+    <p class="sha"><b>SHA-256 of ClickSafe.zip:</b> <!--sha--><code>efcdca8465f04485eab9afda63e23f7a0f04d2f0106e5a1e4902adedd6c91353</code><!--/sha--></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="card">
+      <span class="eyebrow">Free AI, no signup</span>
+      <div class="big">0 keys</div>
+      <h3>Your own AI quota, tied to your connection.</h3>
+      <p>By default ClickSafe calls OVHcloud AI Endpoints' free anonymous tier straight from your browser. It needs no account or key and is rate-limited per IP address, so every streamer gets their own allowance. ClickSafe spreads the work across several vision, text-safety, script and speech-to-text models, and the on-device image model has no limit at all because it runs on your PC.</p>
+      <p>Already pay for an AI provider? Flip "Use my own AI endpoint" in settings (OpenRouter, OpenAI, Gemini, Groq, Mistral or any OpenAI-compatible URL). The free scanner stays the default.</p>
+    </div>
+    <div class="card">
+      <span class="eyebrow">Privacy</span>
+      <div class="big">0 servers</div>
+      <h3>There is no ClickSafe server.</h3>
+      <p>No account, analytics or tracking. Your lists and stats stay in your browser. Sites on your allowed list are never scanned.</p>
+      <p>When a new site is scanned, its address, visible text and a few of its images go to the AI endpoint for the check, and a short clip from the start of a video goes to speech-to-text. The sealed preview sends the link to Jina Reader, which opens it on its own servers (never for login or token links). The domain-age check asks a public registry (RDAP) about the site's domain name.</p>
+      <p>Each of these can be switched off in settings. The on-device image model sends nothing.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">FAQ</span><h2>Good questions.</h2></div>
+    <div class="faq">
+      <details><summary>Does it guarantee I won't get banned?</summary><p>No tool can promise that. ClickSafe makes it much less likely that a bad page ever reaches your screen: it fails closed (if it can't decide, the page stays hidden) and checks against all four platforms' guidelines. Keep using your platform's own safety settings too.</p></details>
+      <details><summary>How do I allow a site?</summary><p>Click the ClickSafe icon and press "Allow this site", or open settings and type or paste any domain or link into Allowed sites. There are one-click suggestions for popular sites. Allowed sites open instantly and are never scanned.</p></details>
+      <details><summary>What is lockdown mode?</summary><p>It's on by default. When a page breaks platform guidelines, nobody can click "Show anyway" or "Open anyway" past it, not even by accident mid-stream. If you really need a site, add it to your allowed list in settings.</p></details>
+      <details><summary>What about stuff that loads after the page opens?</summary><p>New images and videos that appear later (infinite scroll, carousels, autoplay) stay blurred and muted until the AI clears them. If one breaks the guidelines, the whole page is blocked.</p></details>
+      <details><summary>Do I need to paste links anywhere?</summary><p>No. ClickSafe checks automatically when you click a link or a site redirects you. If you want to check a link without opening it, right-click it and pick "Check this link with ClickSafe".</p></details>
+      <details><summary>What is the sealed preview?</summary><p>Before an unchecked link loads in your browser, it's opened in a sealed remote browser (Jina Reader) that follows every redirect and takes a screenshot. The site never reaches your PC or sees your IP during that step. Links that look like logins or carry one-time tokens skip it, so nothing private is opened by someone else. The page still gets the full hidden check when it loads for you.</p></details>
+      <details><summary>Will it slow down my browsing?</summary><p>Allowed sites open instantly. New sites are checked behind the shield the first time, usually within a few seconds. Pages with video take longer because ClickSafe plays and samples them. Repeat visits within 30 minutes are instant.</p></details>
+      <details><summary>What if something gets past it?</summary><p>Press <span class="kbd">Alt+Shift+X</span>. The panic button covers and mutes the current page instantly, so you can deal with it off stream.</p></details>
+      <details><summary>What do my viewers see while a page is checked?</summary><p>A dark "Checking this page" screen with the site name. If the page is blocked, they see a neutral "Blocked" screen. The reason and the address are tucked behind a collapsed "Details" section so nothing explicit ends up on stream.</p></details>
+      <details><summary>Does it work without the AI?</summary><p>Yes. Turn the AI scan off and ClickSafe still uses its blocklists, live threat feeds, look-alike domain detection, adult rating tags, on-page keyword checks, its script checks, the on-device image model, and the clipboard, download, IP-lookup and prompt guards.</p></details>
+      <details><summary>Which browsers?</summary><p>Any Chromium browser: Chrome, Edge, Brave, Opera, Vivaldi. In Edge the address for step 2 is <code>edge://extensions</code>, in Brave <code>brave://extensions</code>. The copy button picks the right one for you.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>ClickSafe · made for streamers</span><span>Not affiliated with TikTok, Twitch, YouTube, Instagram or Kick.</span></div></footer>
+<div class="toast-dl" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

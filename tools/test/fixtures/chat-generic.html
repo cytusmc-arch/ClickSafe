@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Generic message list (ClickSafe chat fixture)</title>
+<style>
+  body{margin:0;background:#111318;color:#e8ecf3;font:14px/1.5 system-ui,sans-serif;padding:20px}
+  #log{height:260px;width:420px;overflow-y:auto;border:1px solid #2b3240;border-radius:8px;padding:8px 12px}
+  .message{padding:3px 0}
+  a{color:#7cc4ff}
+</style>
+</head>
+<body>
+<h2>Messages</h2>
+<div id="log" role="log">
+  <div class="message" id="g-old">old link <a href="https://example.org/old">https://example.org/old</a></div>
+  <script>for (let i = 0; i < 30; i++) document.write('<div class="message">filler message ' + i + '</div>');</script>
+  <div class="message" id="g-mask">masked: <a href="https://phish.example/login">https://google.com</a></div>
+  <div class="message" id="g-new">newest <a href="https://example.com/new">https://example.com/new</a></div>
+</div>
+<script>
+  const log = document.getElementById('log');
+  log.scrollTop = log.scrollHeight;
+  window.add = (html) => { const d = document.createElement('div'); d.className = 'message'; d.innerHTML = html; log.appendChild(d); log.scrollTop = log.scrollHeight; return d; };
+</script>
+</body>
+</html>

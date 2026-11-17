@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>somechannel - Twitch (ClickSafe chat fixture)</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#0e0e10;color:#efeff1;font:13px/1.5 Inter,"Segoe UI",sans-serif;height:100vh;display:flex;flex-direction:column}
+  .top-nav{height:50px;flex:none;display:flex;gap:16px;align-items:center;padding:0 16px;background:#18181b;border-bottom:1px solid #2f2f35}
+  .top-nav a{color:#efeff1;text-decoration:none;font-weight:600}
+  .row{flex:1;display:flex;min-height:0}
+  main{flex:1;overflow:auto;padding:16px}
+  .player{aspect-ratio:16/9;max-height:360px;background:#000;border-radius:4px;display:grid;place-items:center;color:#555}
+  .channel-panels{display:flex;gap:12px;margin-top:16px}
+  .panel{background:#18181b;border-radius:6px;padding:12px;width:220px}
+  .panel a{color:#bf94ff}
+  .chat-shell{width:340px;flex:none;display:flex;flex-direction:column;border-left:1px solid #2f2f35;background:#18181b}
+  .chat-header{padding:10px;text-align:center;font-weight:600;border-bottom:1px solid #2f2f35}
+  .chat-scrollable-area__message-container{flex:1;overflow-y:auto;padding:8px 10px}
+  .chat-line__message{padding:4px 0;overflow-wrap:anywhere}
+  .chat-author__display-name{font-weight:700;color:#9147ff}
+  a.link-fragment{color:#bf94ff;text-decoration:none}
+  a.link-fragment:hover{text-decoration:underline}
+  .chat-input{padding:10px;border-top:1px solid #2f2f35}
+  .chat-input textarea{width:100%;background:#0e0e10;color:#efeff1;border:1px solid #2f2f35;border-radius:4px}
+</style>
+</head>
+<body>
+<nav class="top-nav">
+  <a href="/directory">Browse</a>
+  <a href="https://www.twitch.tv/turbo">Turbo</a>
+  <a id="nav-ext" href="https://blog.example.com/">Partner blog</a>
+</nav>
+<div class="row">
+  <main>
+    <div class="player">stream player</div>
+    <h2>somechannel</h2>
+    <div class="channel-panels" data-test-selector="channel-panels">
+      <div class="panel"><h3>Merch</h3><a id="panel-ext" href="https://merch.example.net/">merch.example.net</a></div>
+      <div class="panel"><h3>Team</h3><a href="https://www.twitch.tv/team/cool">Our team</a> · <a href="https://static-cdn.jtvnw.net/panel.png">panel image</a></div>
+    </div>
+  </main>
+  <section class="chat-shell" data-test-selector="chat-room-component-layout">
+    <div class="chat-header">STREAM CHAT</div>
+    <div class="chat-scrollable-area__message-container" role="log" id="log"></div>
+    <div class="chat-input"><textarea placeholder="Send a message (try https://evil.test/typed)">https://evil.test/in-the-input-box</textarea></div>
+  </section>
+</div>
+<script>
+  window.__clicks = [];
+  document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a'); if (a) { e.preventDefault(); __clicks.push(a.getAttribute('href')); } });
+  document.addEventListener('auxclick', (e) => { const a = e.target.closest && e.target.closest('a'); if (a) { e.preventDefault(); __clicks.push('aux:' + a.getAttribute('href')); } });
+  const log = document.getElementById('log');
+  const link = (u) => `<a class="link-fragment" href="${u}" target="_blank" rel="noopener noreferrer">${u}</a>`;
+  function line(user, html, id, noScroll) {
+    const d = document.createElement('div');
+    d.className = 'chat-line__message';
+    d.setAttribute('data-a-target', 'chat-line-message');
+    if (id) d.id = id;
+    d.innerHTML = `<span class="chat-author__display-name">${user}</span><span aria-hidden="true">: </span><span class="message" data-html="">${html}</span>`;
+    d.querySelector('.message').dataset.html = html;
+    log.appendChild(d);
+    if (!noScroll) log.scrollTop = log.scrollHeight;
+    return d;
+  }
+  window.line = line; window.link = link;
+  line('alice', 'hello chat!');
+  line('bob', 'cool site ' + link('https://example.com/cool'), 'm1');
+  line('spammer', 'FREE SKINS ' + link('https://evil.test/free-skins'), 'm2');
+  line('carl', 'check this ' + link('https://bit.ly/3xYz'), 'm3');
+  line('dana', 'new thing ' + link('https://sketchy.test/promo'), 'm4');
+  line('eve', 'slow one ' + link('https://slow.test/page'), 'm5');
+  line('fred', 'short ' + link('https://tinyurl.com/abc'), 'm6');
+  line('gina', 'what is ' + link('https://none.test/'), 'm7');
+  line('hank', 'internal ' + link('https://www.twitch.tv/otherchannel') + ' ' + link('https://clips.twitch.tv/FunnyClip') + ' <a class="link-fragment" href="/videos/123">/videos/123</a>', 'm8');
+  line('ivy', 'same link again ' + link('https://example.com/cool'), 'm9');
+
+  // Platform re-renders: React replaces the message content (new anchor element) ...
+  window.rerender = (id) => { const m = document.querySelector('#' + id + ' .message'); m.innerHTML = m.dataset.html; };
+  // ... or prunes children it does not own (drops our badge, keeps the anchor).
+  window.stripForeign = (id) => { const m = document.querySelector('#' + id + ' .message'); for (const c of [...m.childNodes]) if (c.nodeType === 1 && !['A', 'SPAN'].includes(c.tagName)) c.remove(); };
+
+  // Chat flood: n messages in websocket-sized batches (25 per task); `uniq` distinct external links.
+  window.__long = [];
+  try { new PerformanceObserver((l) => { for (const e of l.getEntries()) __long.push(Math.round(e.duration)); }).observe({ type: 'longtask' }); } catch {}
+  window.burst = (n, uniq) => {
+    const B = window.__burst = { t0: performance.now(), maxGap: 0, running: true, longBefore: __long.length };
+    let last = performance.now();
+    const tick = () => { const now = performance.now(); B.maxGap = Math.max(B.maxGap, now - last); last = now; if (B.running) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+    return new Promise((resolve) => {
+      let i = 0;
+      const step = () => {
+        for (let k = 0; k < 25 && i < n; k++, i++) {
+          const u = `https://site${i % uniq}.example/p/${i % uniq}`;
+          line('user' + i, `msg ${i} ` + link(u) + (i % 10 === 0 ? ' ' + link('https://www.twitch.tv/x' + i) : ''), null, true);
+        }
+        log.scrollTop = log.scrollHeight;
+        if (i < n) setTimeout(step, 0); else { B.appendMs = performance.now() - B.t0; resolve(B.appendMs); }
+      };
+      step();
+    });
+  };
+</script>
+</body>
+</html>

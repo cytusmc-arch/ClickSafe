@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>somestreamer | Kick (ClickSafe chat fixture)</title>
+<style>
+  body{margin:0;background:#0b0e0f;color:#fff;font:14px/1.5 Inter,sans-serif;display:flex;height:100vh}
+  main{flex:1;padding:16px}
+  #chatroom{width:340px;display:flex;flex-direction:column;border-left:1px solid #24272c;background:#191b1f}
+  #chatroom-messages{flex:1;overflow-y:auto;padding:8px 12px}
+  .chat-entry{padding:3px 0}
+  .chat-entry-username{color:#53fc18;font-weight:700}
+  .chat-entry a{color:#53fc18}
+</style>
+</head>
+<body>
+<main><h2>somestreamer</h2><p>Follow on <a href="https://kick.com/somestreamer/about">about</a></p></main>
+<div id="chatroom">
+  <div id="chatroom-messages">
+    <div data-index="0"><div data-chat-entry="k1" class="chat-entry"><span class="chat-entry-username">viewer</span>: <span class="chat-entry-content">get skins http://evil.test/kick now</span></div></div>
+    <div data-index="1"><div data-chat-entry="k2" class="chat-entry"><span class="chat-entry-username">artist</span>: <span class="chat-entry-content">portfolio <a href="https://example.com/kick" target="_blank">https://example.com/kick</a></span></div></div>
+    <div data-index="2"><div data-chat-entry="k3" class="chat-entry"><span class="chat-entry-username">fan</span>: <span class="chat-entry-content">visit freestuff.xyz today, also node.js and readme.md are cool</span></div></div>
+    <div data-index="3"><div data-chat-entry="k4" class="chat-entry"><span class="chat-entry-username">mod</span>: <span class="chat-entry-content">clip: <a href="https://kick.com/otherstreamer">https://kick.com/otherstreamer</a> and kick.com/clips/abc</span></div></div>
+  </div>
+</div>
+<script>
+  window.__clicks = [];
+  document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a'); if (a) { e.preventDefault(); __clicks.push(a.getAttribute('href')); } });
+  window.say = (i, text) => {
+    const box = document.getElementById('chatroom-messages');
+    const d = document.createElement('div');
+    d.dataset.index = String(i);
+    d.innerHTML = `<div data-chat-entry="k${i}" class="chat-entry"><span class="chat-entry-username">late</span>: <span class="chat-entry-content"></span></div>`;
+    box.appendChild(d);
+    d.querySelector('.chat-entry-content').textContent = text; // text arrives after the row, like React
+  };
+</script>
+</body>
+</html>

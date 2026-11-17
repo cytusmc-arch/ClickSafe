@@ -1,0 +1,28 @@
+:root{
+  --bg:#0b0d12;--panel:#12151c;--panel-2:#171b24;--line:#232937;--line-2:#2b3240;
+  --text:#e8ecf3;--muted:#8b95a5;--dim:#5d6778;
+  --mint:#3ddc97;--mint-ink:#06140d;--amber:#ffb547;--red:#ff5d6c;
+  --radius:14px;color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--mint);text-underline-offset:3px}
+h1,h2,h3{margin:0;letter-spacing:-.01em;color:#f4f7fb}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-weight:620;border-radius:10px;padding:10px 16px;cursor:pointer;border:1px solid transparent;text-decoration:none;transition:filter .15s,background .15s,border-color .15s}
+.btn:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+.btn.primary{background:var(--mint);color:var(--mint-ink)}.btn.primary:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;border-color:var(--line-2);color:#c9d2de}.btn.ghost:hover{background:var(--panel-2)}
+.btn.danger{background:transparent;border-color:#4a222a;color:#ff97a1}.btn.danger:hover{background:#21121a}
+.btn.small{padding:7px 11px;font-size:13px;border-radius:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--panel-2);border:1px solid var(--line);color:#c9d2de}
+.chip.ok{color:var(--mint);border-color:#1c4532;background:#0f1f18}
+.chip.warn{color:var(--amber);border-color:#4a3812;background:#1d170b}
+.chip.bad{color:var(--red);border-color:#4a222a;background:#1d0f13}
+.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.muted{color:var(--muted)}
+.switch{position:relative;width:42px;height:24px;flex:none}
+.switch input{appearance:none;margin:0;width:42px;height:24px;border-radius:999px;background:#2b3240;cursor:pointer;transition:background .15s}
+.switch input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#e8ecf3;transition:transform .15s}
+.switch input:checked{background:var(--mint)}
+.switch input:checked::after{transform:translateX(18px);background:var(--mint-ink)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

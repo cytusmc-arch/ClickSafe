@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ClickSafe</title>
+<link rel="stylesheet" href="ui.css">
+<style>
+  body{width:340px;padding:14px}
+  header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  header img{width:28px;height:28px}
+  header h1{font-size:16px;flex:1}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;margin-bottom:10px}
+  .row{display:flex;align-items:center;gap:10px}
+  .row .grow{flex:1;min-width:0}
+  .title{font-weight:650}
+  .small{font-size:12.5px}
+  .host{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .reason{margin:8px 0 0;font-size:12.5px;color:var(--muted)}
+  .btns{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;gap:6px}
+  .stats b{display:block;font-size:18px;font-variant-numeric:tabular-nums}
+  .stats span{font-size:11.5px;color:var(--muted)}
+  footer{display:flex;justify-content:space-between;align-items:center;margin-top:4px}
+  footer a{font-size:12.5px}
+  .off .needs-on{opacity:.45;pointer-events:none}
+  [hidden]{display:none!important}
+  .btn.panic{width:100%;justify-content:space-between;margin-bottom:10px;background:var(--red);color:#1d0508;font-weight:700}
+  .btn.panic:hover{filter:brightness(1.08)}
+  .btn.panic .key{font:600 11.5px ui-monospace,SFMono-Regular,Consolas,monospace;opacity:.75}
+  .checked{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);min-width:0}
+  .label{font-size:11.5px;font-weight:650;letter-spacing:.03em;text-transform:uppercase;color:var(--dim);margin-bottom:3px}
+  .sum{font-size:12.5px;color:#c9d2de;overflow-wrap:anywhere}
+  .finds{list-style:none;margin:6px 0 0;padding:0}
+  .finds li{display:flex;align-items:flex-start;gap:6px;font-size:12px;color:var(--muted);padding:2px 0;min-width:0}
+  .finds li span:last-child{min-width:0;overflow-wrap:anywhere}
+  .finds .chip{flex:none;font-size:11px;padding:0 7px}
+  .adder{display:flex;gap:6px;margin-top:6px}
+  .adder input{flex:1;min-width:0;font:13px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;background:var(--bg);color:var(--text);border:1px solid var(--line-2);border-radius:8px;padding:6px 9px}
+  .adder .btn{flex:none}
+  .msg{min-height:0;margin:5px 0 0;font-size:12px;color:var(--red)}
+  .msg:empty{display:none}
+  .deep{margin-top:4px;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<header>
+  <img src="icons/48.png" alt="">
+  <h1>ClickSafe</h1>
+  <label class="switch" title="Stream shield on/off"><input type="checkbox" id="enabled" aria-label="Stream shield"></label>
+</header>
+
+<button class="btn panic" id="panic" type="button" title="Cover and mute this tab and silence every other tab"><span>Panic: cover &amp; mute</span><span class="key">Alt+Shift+X</span></button>
+
+<div class="card">
+  <div class="row">
+    <div class="grow">
+      <div class="title" id="mode">Stream shield is on</div>
+      <div class="small muted" id="ai">AI vision scan: free, no key</div>
+      <div class="small muted deep" id="deep" hidden></div>
+    </div>
+  </div>
+</div>
+
+<div class="card needs-on" id="site">
+  <div class="row">
+    <div class="grow">
+      <div class="host mono" id="host">—</div>
+    </div>
+    <span class="chip" id="status">—</span>
+  </div>
+  <p class="reason" id="reason" hidden></p>
+  <div class="checked" id="checked" hidden>
+    <div class="label">What was checked</div>
+    <div class="sum" id="checkedSum"></div>
+    <ul class="finds" id="finds"></ul>
+  </div>
+  <div class="btns">
+    <button class="btn primary small" id="trust" hidden>Allow this site</button>
+    <button class="btn ghost small" id="untrust" hidden>Remove from allowed</button>
+    <button class="btn ghost small" id="rescan" hidden>Re-check</button>
+  </div>
+</div>
+
+<form class="card" id="checkForm" autocomplete="off">
+  <label class="title small" for="checkUrl">Check a link</label>
+  <div class="small muted">Opens it in a sealed check window first.</div>
+  <div class="adder">
+    <input type="text" id="checkUrl" placeholder="https://…" spellcheck="false">
+    <button class="btn ghost small" type="submit">Check</button>
+  </div>
+  <div class="msg" id="checkMsg" role="status"></div>
+</form>
+
+<div class="card stats">
+  <div><b id="scanned">0</b><span>checked</span></div>
+  <div><b id="held">0</b><span>held</span></div>
+  <div><b id="blocked">0</b><span>blocked</span></div>
+</div>
+
+<footer>
+  <a href="options.html#sites" target="_blank">Allowed sites &amp; settings</a>
+  <a href="https://clicksafe.pages.dev" target="_blank" class="muted">clicksafe.pages.dev</a>
+</footer>
+<script type="module" src="popup.js"></script>
+</body>
+</html>

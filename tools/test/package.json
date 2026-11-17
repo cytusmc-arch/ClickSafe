@@ -1,0 +1,19 @@
+{
+  "name": "clicksafe-tests",
+  "version": "1.0.0",
+  "description": "End-to-end tests for ClickSafe",
+  "scripts": {
+    "e2e": "node run.mjs",
+    "intel": "node intel.mjs",
+    "chatguard": "node chatguard.mjs",
+    "medialab": "node medialab.mjs",
+    "site": "node site-check.mjs"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "playwright": "^1.49.1"
+  },
+  "private": true,
+  "license": "GPL-3.0-only"
+}

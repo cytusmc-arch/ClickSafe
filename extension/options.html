@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClickSafe settings</title>
+<link rel="icon" href="icons/32.png">
+<link rel="stylesheet" href="ui.css">
+<link rel="stylesheet" href="options.css">
+</head>
+<body>
+<main>
+  <header><img src="icons/128.png" alt=""><h1>ClickSafe settings</h1></header>
+
+  <div class="welcome" id="welcome">
+    <h2>You're protected. Nothing else to set up.</h2>
+    <p class="muted">From now on, every new website opens behind the ClickSafe shield. It stays hidden and muted until it has been checked against TikTok, Twitch, YouTube and Instagram guidelines.</p>
+    <ol>
+      <li><b>Pin it:</b> click the puzzle icon in Chrome's toolbar, then the pin next to ClickSafe.</li>
+      <li><b>Test it:</b> open any site you haven't allowed and watch the shield come up.</li>
+      <li>Sites you use all the time are on your <a href="#sites">allowed list</a>. Add more with one click below.</li>
+    </ol>
+  </div>
+
+  <section>
+    <h2>Protection</h2>
+    <p class="lead">Scams, phishing, malware, hate, self-harm and other guideline violations are always checked.</p>
+    <div class="opt"><div class="grow"><b>Stream shield</b><span>Hide every new site until it's checked.</span></div><label class="switch"><input type="checkbox" data-k="enabled"></label></div>
+    <div class="opt"><div class="grow"><b>Lockdown mode</b><span>Pages that break platform guidelines can't be shown with "Show anyway" or "Open anyway". Only your allowed-sites list below can override it.</span></div><label class="switch"><input type="checkbox" data-k="lockdown"></label></div>
+    <div class="opt"><div class="grow"><b>Watch new images and videos</b><span>After a page is shown, anything that loads later (infinite scroll, carousels, autoplay) stays blurred and muted until it's checked.</span></div><label class="switch"><input type="checkbox" data-k="watchMedia"></label></div>
+    <div class="opt"><div class="grow"><b>Adult, sexual and suggestive content</b><span>Porn, cam and OnlyFans-style sites, nudity, sexualised images.</span></div><label class="switch"><input type="checkbox" data-cat="adult"></label></div>
+    <div class="opt"><div class="grow"><b>Gore, violence and shock</b><span>Graphic violence, real injuries or deaths, shock sites.</span></div><label class="switch"><input type="checkbox" data-cat="gore"></label></div>
+    <div class="opt"><div class="grow"><b>Gambling</b><span>Casinos, betting and case-opening sites.</span></div><label class="switch"><input type="checkbox" data-cat="gambling"></label></div>
+    <div class="opt"><div class="grow"><b>IP loggers</b><span>Grabify-style links that capture your IP address.</span></div><label class="switch"><input type="checkbox" data-cat="iplogger"></label></div>
+    <div class="opt"><div class="grow"><b>Strict mode</b><span>If the AI scan can't finish, keep the page hidden. Turn off to fall back to local checks only.</span></div><label class="switch"><input type="checkbox" data-k="strict"></label></div>
+    <div class="opt"><div class="grow"><b>Clipboard guard</b><span>Stop pages from putting commands on your clipboard (fake "verify you're human" attacks).</span></div><label class="switch"><input type="checkbox" data-k="clipboardGuard"></label></div>
+    <div class="opt"><div class="grow"><b>Block permission prompts</b><span>Deny pop-up permission prompts: camera, mic, location, notifications.</span></div><label class="switch"><input type="checkbox" data-k="blockPrompts"></label></div>
+    <div class="opt"><div class="grow"><b>Block IP grabbers</b><span>Block IP grabbers and data exfiltration to webhooks.</span></div><label class="switch"><input type="checkbox" data-k="blockIpLookups"></label></div>
+    <div class="opt"><div class="grow"><b>Block risky downloads</b><span>Cancel program/script downloads from sites that aren't on your allowed list.</span></div><label class="switch"><input type="checkbox" data-k="blockDownloads"></label></div>
+    <div class="opt"><div class="grow"><b>SafeSearch</b><span>Force SafeSearch on Google, Bing, DuckDuckGo, Yahoo, Brave.</span></div><label class="switch"><input type="checkbox" data-k="safeSearch"></label></div>
+    <div class="opt"><div class="grow"><b>YouTube Restricted Mode</b><span>Hide mature videos on YouTube. Strict hides more.</span></div><select class="side" id="ytRestrict" aria-label="YouTube Restricted Mode"><option value="off">Off</option><option value="moderate">Moderate</option><option value="strict">Strict</option></select></div>
+    <div class="opt"><div class="grow"><b>Threat feeds</b><span>Check links against public phishing &amp; malware feeds.</span>
+      <div class="feeds"><span id="feedStatus">Loading feed status…</span> <button class="linkbtn" id="feedRefresh" type="button">Update now</button></div>
+      <span>Feeds: phishing-filter and urlhaus-filter by curbengh (malware-filter, CC BY-SA 4.0, built from PhishTank, OpenPhish, PhishStats and abuse.ch URLhaus) and SinkingYachts.</span>
+    </div><label class="switch"><input type="checkbox" data-k="threatFeeds"></label></div>
+    <div class="opt"><div class="grow"><b>Domain age</b><span>Flag brand-new domains.</span></div><label class="switch"><input type="checkbox" data-k="domainAge"></label></div>
+    <div class="opt"><div class="grow"><b>Chat link badges</b><span>Show safety badges next to links in Twitch, Kick, YouTube, TikTok, X and Discord chat.</span></div><label class="switch"><input type="checkbox" data-k="chatGuard"></label></div>
+    <p class="fine"><b>Panic hotkey:</b> press <span class="kbd">Alt</span>+<span class="kbd">Shift</span>+<span class="kbd">X</span> to instantly cover and mute the current tab. <button class="linkbtn" id="shortcuts" type="button">Change the shortcut</button></p>
+  </section>
+
+  <section id="sites">
+    <h2>Allowed sites</h2>
+    <p class="lead">Allowed sites open instantly and are never hidden or scanned. A domain covers its subdomains. Paste a domain or a full link.</p>
+    <form class="adder" id="addTrustedForm" autocomplete="off">
+      <input type="text" id="addTrusted" placeholder="e.g. reddit.com or https://www.example.com/page" spellcheck="false" aria-label="Site to allow">
+      <button class="btn primary" type="submit">Allow</button>
+    </form>
+    <div class="msg" id="trustedMsg" role="status"></div>
+    <div class="suggest" id="suggest"></div>
+    <ul class="sitelist" id="trustedList"></ul>
+    <p class="fine">User-content areas like <span class="mono">sites.google.com</span>, <span class="mono">docs.google.com</span> and <span class="mono">gist.github.com</span> are always checked, even when their parent domain is allowed. <button class="linkbtn" id="resetTrusted" type="button">Reset to the default list</button></p>
+
+    <h2 class="mt">Always blocked</h2>
+    <p class="lead">These never open, whatever the AI says.</p>
+    <form class="adder" id="addBlockedForm" autocomplete="off">
+      <input type="text" id="addBlocked" placeholder="e.g. example.com" spellcheck="false" aria-label="Site to block">
+      <button class="btn ghost" type="submit">Block</button>
+    </form>
+    <div class="msg" id="blockedMsg" role="status"></div>
+    <ul class="sitelist" id="blockedList"></ul>
+  </section>
+
+  <section>
+    <h2>AI vision scan</h2>
+    <p class="lead" id="aiLead">By default ClickSafe uses <b>OVHcloud AI Endpoints' free anonymous tier</b>: no account, no key, limited per IP address, so every user has their own quota (about 8 scans a minute across 4 vision models). The page's text and up to 3 of its largest images are sent for the check. Allowed sites are never sent.</p>
+    <div class="opt"><div class="grow"><b>Use the AI scan</b><span>Off = local checks only (blocklists, look-alike domains, page keywords).</span></div><label class="switch"><input type="checkbox" data-k="aiEnabled"></label></div>
+    <div class="opt"><div class="grow"><b>Send page images</b><span>Lets the model actually look at the page. Off = text only.</span></div><label class="switch"><input type="checkbox" data-k="sendImages"></label></div>
+    <div class="opt"><div class="grow"><b>Use my own AI endpoint</b><span>Off = the free anonymous scanner above (recommended). Turn on to use a provider you have a key for.</span></div><label class="switch"><input type="checkbox" data-k="customAi" id="customAi"></label></div>
+    <div class="custom" id="customBox" hidden>
+      <div class="grid2">
+        <div><label class="field" for="customPreset">Provider</label><select id="customPreset"></select></div>
+        <div><label class="field" for="customBase">API base URL (https, OpenAI-compatible)</label><input type="text" id="customBase" spellcheck="false" placeholder="https://…/v1"></div>
+      </div>
+      <label class="field" for="customKey">API key</label>
+      <input type="password" id="customKey" autocomplete="off" spellcheck="false" placeholder="Stored only in this browser">
+      <label class="field" for="customModels">Vision models, tried in order (one per line)</label>
+      <textarea id="customModels" spellcheck="false" placeholder="a model id that accepts images"></textarea>
+      <div class="msg" id="customMsg" role="status"></div>
+      <p class="fine">Until a valid https URL and at least one model are saved, ClickSafe keeps using the free anonymous scanner.</p>
+    </div>
+    <div class="row">
+      <button class="btn ghost small" id="test" type="button">Test the AI scanner</button>
+      <span class="chip" id="providerChip">—</span>
+    </div>
+    <div class="test" id="testOut"></div>
+    <details>
+      <summary>Timing</summary>
+      <div class="grid2">
+        <div><label class="field" for="holdAfterMs">Tell me it's slow after (seconds)</label><input type="number" id="holdAfterMs" min="2" max="60" step="1"></div>
+        <div><label class="field" for="aiTimeoutMs">Give up on the AI after (seconds)</label><input type="number" id="aiTimeoutMs" min="5" max="90" step="1"></div>
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>Deep scan</h2>
+    <p class="lead">Extra checks that run while a new page is hidden. Turn some off if checks feel slow.</p>
+    <div class="opt"><div class="grow"><b>Sealed preview</b><span>Open links in a sealed remote browser before they load.</span></div><label class="switch"><input type="checkbox" data-k="sealed"></label></div>
+    <div class="opt"><div class="grow"><b>Time warp</b><span>Fast-forward page timers by N minutes so delayed surprises show up during the check. 0 = off.</span></div><div class="side"><input type="number" id="timeWarpMin" min="0" max="30" step="1" aria-label="Minutes to fast-forward"><span>min</span></div></div>
+    <div class="opt"><div class="grow"><b>Play videos</b><span>Press play on videos and check frames across the whole video.</span></div><label class="switch"><input type="checkbox" data-k="playMedia"></label></div>
+    <div class="opt"><div class="grow"><b>Read every script</b><span>Read every script, including hidden and runtime-generated code.</span></div><label class="switch"><input type="checkbox" data-k="deepScripts"></label></div>
+    <div class="opt"><div class="grow"><b>On-device image model</b><span>Checks images and video frames on your PC (nothing leaves your PC).</span></div><label class="switch"><input type="checkbox" data-k="localModel"></label></div>
+    <div class="opt"><div class="grow"><b>Listen to audio</b><span>Transcribe the start of videos and check what's said.</span></div><label class="switch"><input type="checkbox" data-k="listenAudio"></label></div>
+    <div class="opt"><div class="grow"><b>Text safety model</b><span>A safety model reads the page text.</span></div><label class="switch"><input type="checkbox" data-k="textGuard"></label></div>
+    <div class="opt"><div class="grow"><b>Second opinion</b><span>Ask a second AI model when signals are mixed.</span></div><label class="switch"><input type="checkbox" data-k="secondOpinion"></label></div>
+  </section>
+
+  <section>
+    <h2>Activity log</h2>
+    <p class="lead">What ClickSafe checked, newest first. Kept only in this browser.</p>
+    <div class="opt"><div class="grow"><b>Keep an activity log</b><span>Remember recent checks so you can see what happened and why.</span></div><label class="switch"><input type="checkbox" data-k="activityLog"></label></div>
+    <div class="logwrap">
+      <table class="log">
+        <thead><tr><th>Time</th><th>Site</th><th>Result</th><th>Category</th><th>Reason</th><th><span class="sr">Details</span></th></tr></thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+    <div class="row">
+      <button class="btn ghost small" id="clearLog" type="button">Clear log</button>
+      <span class="count" id="logCount"></span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Stats</h2>
+    <p class="lead" id="stats">—</p>
+    <button class="btn ghost small" id="resetStats" type="button">Reset stats</button>
+  </section>
+</main>
+<div class="saved" id="saved">Saved</div>
+<script type="module" src="options.js"></script>
+</body>
+</html>

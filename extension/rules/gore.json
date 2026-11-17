@@ -1,0 +1,374 @@
+[
+ {
+  "id": 1,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=bestgore.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "bestgore.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 2,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=bestgore.fun"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "bestgore.fun"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 3,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=crazyshit.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "crazyshit.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 4,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=documentingreality.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "documentingreality.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 5,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=efukt.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "efukt.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 6,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=goatse.cx"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "goatse.cx"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 7,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=gorecenter.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "gorecenter.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 8,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=goregrish.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "goregrish.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 9,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=heavy-r.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "heavy-r.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 10,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=hoodsite.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "hoodsite.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 11,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=kaotic.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "kaotic.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 12,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=lemonparty.org"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "lemonparty.org"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 13,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=meatspin.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "meatspin.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 14,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=seegore.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "seegore.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 15,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=shockgore.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "shockgore.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 16,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=theync.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "theync.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 17,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=tubgirl.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "tubgirl.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 18,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore&h=watchpeopledie.tv"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "watchpeopledie.tv"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 19,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=gore"
+   }
+  },
+  "condition": {
+   "regexFilter": "^https?://[^/?#]*(bestgore|goregrish|theync|seegore|gorecenter|watchpeopledie|shockgore)[^/?#]*([/?#]|$)",
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 20,
+  "priority": 20,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "requestDomains": [
+    "bestgore.com",
+    "bestgore.fun",
+    "crazyshit.com",
+    "documentingreality.com",
+    "efukt.com",
+    "goatse.cx",
+    "gorecenter.com",
+    "goregrish.com",
+    "heavy-r.com",
+    "hoodsite.com",
+    "kaotic.com",
+    "lemonparty.org",
+    "meatspin.com",
+    "seegore.com",
+    "shockgore.com",
+    "theync.com",
+    "tubgirl.com",
+    "watchpeopledie.tv"
+   ],
+   "resourceTypes": [
+    "sub_frame"
+   ]
+  }
+ }
+]

@@ -1,0 +1,944 @@
+[
+ {
+  "id": 1,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=2no.co"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "2no.co"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 2,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=blasze.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "blasze.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 3,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=blasze.tk"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "blasze.tk"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 4,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=bmwforum.co"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "bmwforum.co"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 5,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=catsnthing.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "catsnthing.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 6,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=catsnthings.fun"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "catsnthings.fun"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 7,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=crabrave.pw"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "crabrave.pw"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 8,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=curiouscat.club"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "curiouscat.club"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 9,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=datasig.io"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "datasig.io"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 10,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=datauth.io"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "datauth.io"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 11,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=dateing.club"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "dateing.club"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 12,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=ezstat.ru"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "ezstat.ru"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 13,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=fortnight.space"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "fortnight.space"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 14,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=fortnitechat.site"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "fortnitechat.site"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 15,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=freegiftcards.co"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "freegiftcards.co"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 16,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=gamergirl.pro"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "gamergirl.pro"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 17,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=gaming-at-my.best"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "gaming-at-my.best"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 18,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=gamingfun.me"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "gamingfun.me"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 19,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=gotyour.pics"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "gotyour.pics"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 20,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=grabify.link"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "grabify.link"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 21,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=headshot.monster"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "headshot.monster"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 22,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=imageshare.best"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "imageshare.best"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 23,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=iplis.ru"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "iplis.ru"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 24,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=iplogger.co"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "iplogger.co"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 25,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=iplogger.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "iplogger.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 26,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=iplogger.info"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "iplogger.info"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 27,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=iplogger.org"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "iplogger.org"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 28,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=iplogger.ru"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "iplogger.ru"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 29,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=joinmy.site"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "joinmy.site"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 30,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=leancoding.co"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "leancoding.co"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 31,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=locations.quest"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "locations.quest"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 32,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=lovebird.guru"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "lovebird.guru"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 33,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=mypic.icu"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "mypic.icu"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 34,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=otherhalf.life"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "otherhalf.life"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 35,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=partpicker.shop"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "partpicker.shop"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 36,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=progaming.monster"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "progaming.monster"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 37,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=ps3cfw.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "ps3cfw.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 38,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=quickmessage.us"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "quickmessage.us"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 39,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=screenshare.host"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "screenshare.host"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 40,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=screenshot.best"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "screenshot.best"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 41,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=shrekis.life"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "shrekis.life"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 42,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=sportshub.bar"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "sportshub.bar"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 43,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=spottyfly.com"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "spottyfly.com"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 44,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=stopify.co"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "stopify.co"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 45,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=trulove.guru"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "trulove.guru"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 46,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=yip.su"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "yip.su"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 47,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=yourmy.monster"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "yourmy.monster"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 48,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger&h=youshouldclick.us"
+   }
+  },
+  "condition": {
+   "requestDomains": [
+    "youshouldclick.us"
+   ],
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 49,
+  "priority": 20,
+  "action": {
+   "type": "redirect",
+   "redirect": {
+    "extensionPath": "/blocked.html?src=list&cat=iplogger"
+   }
+  },
+  "condition": {
+   "regexFilter": "^https?://[^/?#]*(grabify|iplogger|ipgrabber)[^/?#]*([/?#]|$)",
+   "resourceTypes": [
+    "main_frame"
+   ]
+  }
+ },
+ {
+  "id": 50,
+  "priority": 20,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "requestDomains": [
+    "2no.co",
+    "blasze.com",
+    "blasze.tk",
+    "bmwforum.co",
+    "catsnthing.com",
+    "catsnthings.fun",
+    "crabrave.pw",
+    "curiouscat.club",
+    "datasig.io",
+    "datauth.io",
+    "dateing.club",
+    "ezstat.ru",
+    "fortnight.space",
+    "fortnitechat.site",
+    "freegiftcards.co",
+    "gamergirl.pro",
+    "gaming-at-my.best",
+    "gamingfun.me",
+    "gotyour.pics",
+    "grabify.link",
+    "headshot.monster",
+    "imageshare.best",
+    "iplis.ru",
+    "iplogger.co",
+    "iplogger.com",
+    "iplogger.info",
+    "iplogger.org",
+    "iplogger.ru",
+    "joinmy.site",
+    "leancoding.co",
+    "locations.quest",
+    "lovebird.guru",
+    "mypic.icu",
+    "otherhalf.life",
+    "partpicker.shop",
+    "progaming.monster",
+    "ps3cfw.com",
+    "quickmessage.us",
+    "screenshare.host",
+    "screenshot.best",
+    "shrekis.life",
+    "sportshub.bar",
+    "spottyfly.com",
+    "stopify.co",
+    "trulove.guru",
+    "yip.su",
+    "yourmy.monster",
+    "youshouldclick.us"
+   ],
+   "resourceTypes": [
+    "sub_frame"
+   ]
+  }
+ }
+]
