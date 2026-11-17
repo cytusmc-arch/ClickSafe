@@ -261,6 +261,7 @@ section{padding:84px 0;border-top:1px solid var(--line)}
 .faq details p{margin:0 0 20px;color:var(--muted)}
 
 footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--dim);font-size:14px}
+footer a{color:var(--text);text-decoration:underline;text-underline-offset:3px}footer a:hover{color:var(--mint)}
 footer .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}
 
 .toast-dl{position:fixed;left:50%;bottom:22px;transform:translate(-50%,30px);opacity:0;pointer-events:none;z-index:50;background:#0f1f18;border:1px solid #1c4532;color:var(--text);padding:12px 16px;border-radius:12px;font-size:14.5px;box-shadow:0 20px 60px -20px #000;transition:.3s;max-width:calc(100% - 32px)}
